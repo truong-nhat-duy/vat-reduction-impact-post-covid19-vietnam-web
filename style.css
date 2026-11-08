@@ -50,3 +50,21 @@ figure{margin:18px 0;background:var(--card);border:1px solid var(--bd);border-ra
 .tblwrap{margin:18px 0}.tcap{font-size:14px;margin-bottom:4px}table.data th{background:var(--card);white-space:normal}table.data td{white-space:normal;vertical-align:top;min-width:90px}
 ol.refs{font-size:14px;padding-left:22px}ol.refs li{margin:4px 0;word-break:break-word}
 .cta{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;border-radius:8px;padding:8px 16px;margin:6px 0}
+/* redrawn figures */
+figure.diag{padding:14px}
+.fd{display:flex;flex-direction:column;align-items:center;gap:6px}
+.fd-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;width:100%}
+.fd-row.nowrap{flex-wrap:wrap;align-items:center}
+.fd-box{border:1.5px solid var(--acc);border-radius:10px;padding:8px 12px;text-align:center;font-size:14px;background:var(--card);max-width:340px;flex:1 1 200px}
+.fd-box.main{background:color-mix(in srgb,var(--acc) 12%,var(--card))}.fd-box.sub{border-color:var(--mut)}
+.fd-box.warn{background:color-mix(in srgb,#e08a1e 16%,var(--card));border-color:#e08a1e}.fd-box.bad{background:color-mix(in srgb,#b3382c 14%,var(--card));border-color:#b3382c}.fd-box.good{background:color-mix(in srgb,#1f7a4d 14%,var(--card));border-color:#1f7a4d}
+.fd-box hr{border:0;border-top:1px dashed var(--mut);margin:6px 0}
+.fd-arrow{color:var(--acc);font-size:15px;text-align:center}.fd-arrow em{font-size:12px;color:var(--mut)}.fd-h{color:var(--acc);font-size:20px}
+.fd-note{font-size:12px;color:var(--mut);font-style:italic;margin-top:4px}
+.sv{width:100%;height:auto;display:block}.sv text{fill:var(--fg);font-size:13px}.sv text.sm{font-size:11px;fill:var(--mut)}.sv text.b{font-weight:600}
+.sv .ax{stroke:var(--mut);stroke-width:1.2}.sv .grid{stroke:var(--bd);stroke-width:1}.sv .vl{stroke:var(--mut);stroke-dasharray:5 4}
+.sv .l-ctrl{fill:none;stroke:#2f6fd0;stroke-width:3}.sv .l-trt{fill:none;stroke:#c43d2e;stroke-width:3}.sv .l-cf{fill:none;stroke:#c43d2e;stroke-width:2;stroke-dasharray:6 5}
+.sv .l-hi{fill:none;stroke:#7b3fa0;stroke-width:3}.sv .l-lo{fill:none;stroke:#1f7a4d;stroke-width:3}
+.sv .eff{stroke:var(--fg);stroke-width:2}.sv .thr{stroke:#c43d2e;stroke-width:2;stroke-dasharray:6 4}
+.sv .ci{stroke:var(--mut);stroke-width:2}.sv .pt{fill:var(--acc)}.sv .pt.ref{fill:none;stroke:var(--mut);stroke-width:2}
+.pending{border:1.5px dashed var(--mut);border-radius:10px;padding:26px 14px;text-align:center;color:var(--mut);font-size:14px}
