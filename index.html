@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giảm thuế GTGT 10→8% và doanh nghiệp Việt Nam</title>
+<meta name="description" content="Website tương tác về luận văn đánh giá tác động giảm thuế GTGT 2022–2024 tới hiệu quả doanh nghiệp (dự thảo).">
+<link rel="stylesheet" href="style.css?v=1108105800">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<nav><a href="#ques"><span class="vi-only">Câu hỏi</span><span class="en-only">Question</span></a><a href="#policy"><span class="vi-only">Chính sách</span><span class="en-only">Policy</span></a><a href="#results"><span class="vi-only">Kết quả</span><span class="en-only">Results</span></a><a href="#figs"><span class="vi-only">Hình</span><span class="en-only">Figures</span></a><a href="#open"><span class="vi-only">Vấn đề mở</span><span class="en-only">Open issues</span></a></nav>
+<div class="ctrl"><button id="bvi" type="button">VI</button><button id="ben" type="button">EN</button><button id="bth" type="button" aria-label="theme">◐</button></div>
+</div></header>
+<main class="wrap">
+<h1><span class="vi-only">Giảm thuế GTGT 10% → 8% (2022–2024) có “chạm tới” doanh nghiệp Việt Nam?</span><span class="en-only">Did Vietnam’s 10% → 8% VAT cut (2022–2024) reach firms?</span></h1>
+<p class="sub">Trương Nhật Duy · UEH · <span class="vi-only">GVHD: TS. Ngô Hoàng Thảo Trang</span><span class="en-only">Supervisor: Dr. Ngô Hoàng Thảo Trang</span></p>
+<div class="banner"><strong><span class="vi-only">Dự thảo, chưa qua phản biện.</span><span class="en-only">Working draft, not peer reviewed.</span></strong>
+<span class="vi-only">Các số liệu dưới đây do tác giả báo cáo từ file kết quả riêng và chưa được tái lập đầy đủ; PSM-DiD và Synthetic DiD đang được đối chiếu (CHƯA XÁC MINH). Đây là bằng chứng gợi ý, không phải ước lượng nhân quả sạch.</span>
+<span class="en-only">Figures are author-reported from separate result files and not fully replicated; PSM-DiD and Synthetic DiD are being reconciled (UNVERIFIED). This is suggestive evidence, not clean causal estimation.</span></div>
+
+<section id="ques"><h2><span class="vi-only">Câu hỏi nghiên cứu</span><span class="en-only">Research question</span></h2>
+<div class="grid">
+<div class="card"><h3><span class="vi-only">Câu hỏi</span><span class="en-only">Question</span></h3><p class="vi-only">Giảm thuế suất GTGT có cải thiện lợi nhuận của doanh nghiệp được hưởng không, và qua kênh nào (chi phí cố định, lao động, sở hữu)?</p><p class="en-only">Did the VAT cut raise profit of eligible firms, and through which channel (fixed costs, labor, ownership)?</p></div>
+<div class="card"><h3><span class="vi-only">Dữ liệu</span><span class="en-only">Data</span></h3><p class="vi-only">Điều tra Doanh nghiệp Việt Nam (VES) 2018–2024, khoảng 3,86 triệu quan sát doanh nghiệp–năm. Dữ liệu gốc không công khai trên website.</p><p class="en-only">Vietnam Enterprise Survey (VES) 2018–2024, about 3.86 million firm-years. Raw data are not published on this site.</p></div>
+<div class="card"><h3><span class="vi-only">Thiết kế</span><span class="en-only">Design</span></h3><p class="vi-only">DiD hai chiều (TWFE), event study, PSM-DiD, Synthetic DiD, triple-difference theo đòn bẩy hoạt động và sở hữu. Nhóm hưởng: ngành thuộc diện giảm thuế; đối chứng: viễn thông, tài chính, ngân hàng, bất động sản.</p><p class="en-only">TWFE DiD, event study, PSM-DiD, Synthetic DiD, triple-difference by operating leverage and ownership. Treated: eligible industries; control: telecom, finance, banking, real estate.</p></div>
+</div></section>
+
+<section id="policy"><h2><span class="vi-only">Ba giai đoạn giảm thuế</span><span class="en-only">Three policy phases</span></h2>
+<div class="timeline">
+<div class="card"><strong>02–12/2022</strong><p>Nghị định 15/2022/NĐ-CP</p></div>
+<div class="card"><strong>07–12/2023</strong><p>Nghị định 44/2023/NĐ-CP</p></div>
+<div class="card"><strong>01–06/2024</strong><p>Nghị định 94/2023/NĐ-CP</p></div>
+</div>
+<p class="sub vi-only">Nghị quyết giảm thuế 30% cho hộ/doanh nghiệp doanh thu dưới 10 tỷ đồng (2026) nằm ngoài giai đoạn dữ liệu, chỉ là bối cảnh.</p>
+<p class="sub en-only">The 2026 resolution on a 30% tax cut for households and firms with revenue under VND 10 billion lies outside the data window and is context only.</p></section>
+
+<section id="results"><h2><span class="vi-only">Khám phá kết quả</span><span class="en-only">Results explorer</span></h2>
+<p class="sub vi-only">Bấm nhóm để lọc; bấm thanh để xem chi tiết. Thanh cam = chưa chốt. Hệ số không cùng thang với Cox HR nên HR không có trong biểu đồ.</p>
+<p class="sub en-only">Click a group to filter; click a bar for details. Orange = unresolved. Cox HR is on a different scale and is not charted.</p>
+<div class="chips" id="chips"></div>
+<div class="card"><svg id="chart" role="img" aria-label="coefficients"></svg><div class="detail" id="detail"></div></div>
+<div class="card scroll"><table id="tbl"></table></div>
+<div class="card"><strong>Cox HR (thoát thị trường / exit): 2,158***</strong> <span class="vi-only">— mẫu con 20% (N = 771.413), khoảng 94% mẫu thuộc nhóm treated, cần diễn giải thận trọng.</span><span class="en-only">— 20% subsample (N = 771,413); about 94% of the sample is treated, so interpret with care.</span></div>
+</section>
+
+<section id="figs"><h2><span class="vi-only">Hình minh họa (bản nháp)</span><span class="en-only">Figures (draft)</span></h2><div class="gallery" id="gal"></div></section>
+
+<section id="open"><h2><span class="vi-only">Vấn đề mở</span><span class="en-only">Open issues</span></h2>
+<ul class="vi-only"><li><strong>PSM-DiD:</strong> chạy lại cho dấu +0,069 so với −0,069 trong luận văn; −2,530 chưa tái lập.</li><li><strong>Synthetic DiD:</strong> −1,316 (SE 0,602) so với −1,321 (SE 0,457).</li><li><strong>Nhận diện:</strong> chính sách gán theo ngành nên nhóm đối chứng yếu; chưa đo pass-through.</li><li><strong>Đòn bẩy thấp:</strong> kết quả DDD ngược giả thuyết.</li><li>“PSM-DiD không có ý nghĩa” không chứng minh được vai trò bảo vệ.</li></ul>
+<ul class="en-only"><li><strong>PSM-DiD:</strong> a re-run gave +0.069 versus −0.069 in the thesis; −2.530 not reproduced.</li><li><strong>Synthetic DiD:</strong> −1.316 (SE 0.602) versus −1.321 (SE 0.457).</li><li><strong>Identification:</strong> assignment is at industry level, so the control group is weak; pass-through not measured.</li><li><strong>Low leverage:</strong> the DDD result runs against the hypothesis.</li><li>An insignificant PSM-DiD does not prove a protective role.</li></ul>
+</section>
+</main>
+<footer><div class="wrap"><span class="vi-only">Bản nháp học thuật, đường dẫn dữ liệu và mã nguồn không công khai; liên hệ tác giả để biết thêm.</span><span class="en-only">Academic draft; data and code are not public. Contact the author for details.</span></div></footer>
+<dialog id="dlg"><img id="dimg" alt=""><form method="dialog"><button>OK</button></form></dialog>
+<script src="app.js?v=1108105800"></script>
+</body></html>

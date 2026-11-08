@@ -1,0 +1,18 @@
+[
+{"id":"profit","group":"baseline","vi":"Lợi nhuận (IHS), baseline TWFE","en":"Profit (IHS), baseline TWFE","est":-1.061,"se":0.702,"stars":"","n":3179568,"status":"reported","note_vi":"Không có ý nghĩa thống kê.","note_en":"Not statistically significant."},
+{"id":"revenue","group":"baseline","vi":"Doanh thu, baseline TWFE","en":"Revenue, baseline TWFE","est":-0.972,"se":null,"stars":"**","n":3140735,"status":"reported","note_vi":"Hệ số âm, ý nghĩa 5%.","note_en":"Negative coefficient, 5% level."},
+{"id":"indyr","group":"robust","vi":"Industry×Year FE","en":"Industry×Year FE","est":-0.982,"se":null,"stars":null,"n":null,"status":"reported","note_vi":"Kiểm soát nhiễu theo ngành (nhận xét của GV). Kiểm tra lại biến kết quả và sai số chuẩn trong luận văn.","note_en":"Controls for industry confounding. Outcome and SE to be checked against the thesis."},
+{"id":"placebo","group":"robust","vi":"Placebo (năm giả 2020)","en":"Placebo (fake year 2020)","est":0.014,"se":null,"stars":"","n":null,"status":"reported","note_vi":"Không có ý nghĩa.","note_en":"Not significant."},
+{"id":"sme","group":"hetero","vi":"SME","en":"SMEs","est":-0.966,"se":null,"stars":null,"n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"large","group":"hetero","vi":"Doanh nghiệp lớn","en":"Large firms","est":-1.451,"se":null,"stars":null,"n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"private","group":"hetero","vi":"Tư nhân","en":"Private","est":-0.843,"se":null,"stars":null,"n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"soe","group":"hetero","vi":"Nhà nước (SOE)","en":"State-owned (SOE)","est":0.592,"se":null,"stars":null,"n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"fdi","group":"hetero","vi":"FDI","en":"FDI","est":-1.872,"se":null,"stars":"*","n":null,"status":"reported","note_vi":"Ý nghĩa 10%.","note_en":"10% level."},
+{"id":"ddd_low","group":"ddd","vi":"DDD: đòn bẩy hoạt động thấp","en":"DDD: low operating leverage","est":-1.043,"se":null,"stars":"***","n":null,"status":"reported","note_vi":"Ngược giả thuyết ban đầu; lời giải thích hiện tại chưa vững.","note_en":"Opposite to the initial hypothesis; the current explanation is not robust."},
+{"id":"ddd_soe","group":"ddd","vi":"DDD: SOE","en":"DDD: SOE","est":8.456,"se":null,"stars":"***","n":null,"status":"reported","note_vi":"Độ lớn bất thường, cần kiểm tra.","note_en":"Unusually large; needs checking."},
+{"id":"labor","group":"labor","vi":"Lao động","en":"Employment","est":0.026,"se":null,"stars":"***","n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"wage","group":"labor","vi":"Quỹ lương","en":"Wage bill","est":-0.632,"se":null,"stars":"***","n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"bhxh","group":"labor","vi":"Đóng BHXH","en":"Social insurance contributions","est":0.069,"se":null,"stars":"***","n":null,"status":"reported","note_vi":"","note_en":""},
+{"id":"psm","group":"unsettled","vi":"PSM-DiD","en":"PSM-DiD","est":-0.069,"se":null,"stars":"","n":null,"status":"unresolved","note_vi":"Chạy lại cho dấu +0,069; giá trị −2,530 chưa tái lập. CHƯA XÁC MINH.","note_en":"A re-run gave +0.069; −2.530 never reproduced. UNVERIFIED."},
+{"id":"sdid","group":"unsettled","vi":"Synthetic DiD","en":"Synthetic DiD","est":-1.316,"se":0.602,"stars":"**","n":null,"status":"unresolved","note_vi":"Luận văn −1,316 (SE 0,602); file sdid_results −1,321 (SE 0,457). CHƯA XÁC MINH.","note_en":"Thesis −1.316 (SE 0.602); sdid_results file −1.321 (SE 0.457). UNVERIFIED."}
+]
